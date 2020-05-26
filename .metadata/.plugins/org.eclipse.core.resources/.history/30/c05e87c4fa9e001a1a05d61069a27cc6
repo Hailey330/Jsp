@@ -1,0 +1,53 @@
+package com.cos.ch03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * 한글 테스트 데이터 전달 데이터 응답
+ */
+
+// http://localhost.8000/ch03/postman
+
+@WebServlet("/postman")
+public class EncServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public EncServlet() {
+		super();
+
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("Get 요청옴");
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("Post 요청옴");
+//		request.setCharacterEncoding("UTF-8");  - 한글  O
+//		String username = request.getParameter("username");
+//		System.out.println("Post 받은 값 : " + username);
+		BufferedReader br = request.getReader();
+		String data = null;
+		while ((data = br.readLine()) != null) {
+			System.out.println(data);
+		}
+	}
+
+	@Override
+	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Put 요청옴");
+	}
+
+	@Override
+	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Delete 요청옴");
+	}
+}
