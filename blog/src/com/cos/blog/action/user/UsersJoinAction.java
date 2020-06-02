@@ -1,5 +1,7 @@
 package com.cos.blog.action.user;
 
+//데이터가 필요없으니까 바로 view 이동 
+
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;

@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import com.cos.blog.action.Action;
 import com.cos.blog.action.user.UsersJoinAction;
 import com.cos.blog.action.user.UsersJoinProcAction;
+import com.cos.blog.action.user.UsersLoginAction;
+import com.cos.blog.action.user.UsersLoginProcAction;
+import com.cos.blog.action.user.UsersLogoutAction;
 
 // http://localhost:8000/blog/user
 @WebServlet("/user")
@@ -17,7 +20,7 @@ public class UsersController extends HttpServlet {
 	private final static String TAG = "UsersControll : ";
 	private static final long serialVersionUID = 1L;
        
-    
+     
     public UsersController() {
         super();
     }
@@ -54,9 +57,14 @@ public class UsersController extends HttpServlet {
 			// 회원수정 페이지에서 회원 탈퇴 버튼 누르면 회원 삭제를 진행. 로그아웃(세션 해제) 후 index.jsp 응답
 		} else if (cmd.equals("login")) {
 			// 회원 로그인 페이지로 이동 → view
+			return new UsersLoginAction();
 		} else if (cmd.equals("loginProc")) {
 			// 회원 로그인을 진행한 후에 세션에 등록하고 index.jsp 로 이동
+			return new UsersLoginProcAction();
+		} else if (cmd.equals("logout")) {
+			return new UsersLogoutAction();
 		}
+	
 		return null;
 	} 
 
