@@ -43,7 +43,15 @@ public class UsersLoginProcAction implements Action{
 			session.setAttribute("principal", user); // principle - 인증 주체 
 			
 			if(request.getParameter("remember") != null) {
+				// key → Set-Cookie
+				// value → remember=ssar
 				Cookie cookie = new Cookie("remember", user.getUsername());
+				response.addCookie(cookie);
+			
+				// response.setHeader("Set-Cookie", "remember=ssar");
+			} else {
+				Cookie cookie = new Cookie("remember", "");
+				cookie.setMaxAge(0);
 				response.addCookie(cookie);
 			}
 			
@@ -51,10 +59,5 @@ public class UsersLoginProcAction implements Action{
 		} else {
 			Script.back("로그인 실패", response);
 		}
-		
-	
-	
-		
-		
 	}
 }
