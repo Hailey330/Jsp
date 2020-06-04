@@ -55,7 +55,7 @@ public class BoardWriteProcAction implements Action {
 		// 5번 - result == 1 이면 성공로직(index.jsp로 이동)
 		// 6번 - result != 1 이면 실패로직(history.back())
 		if(result == 1) {
-			Script.href("게시글 업로드 완료", "/blog/users?cmd=home", response);
+			Script.href("게시글 업로드 완료", "index.jsp", response);
 		} else {
 			Script.back("게시글 업로드에 실패하였습니다.", response);
 		}
