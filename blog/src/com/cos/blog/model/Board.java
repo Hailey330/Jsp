@@ -1,6 +1,6 @@
 package com.cos.blog.model;
 
-import com.sun.jmx.snmp.Timestamp;
+import java.sql.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,4 +18,10 @@ public class Board {
 	private String content;
 	private int readCount;
 	private Timestamp createDate;
+	
+//	public String getTitle() { // DB에서 꺼낼 때
+		// 꺽쇠 치환
+//		title = title.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+//		return title;
+//	}
 }

@@ -1,10 +1,14 @@
 INDEX VERSION 1.131
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3129876376.index
 \test\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\996872386.index
+\ProductList\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1637802776.index
 \blog\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2240331710.index
 \ch04\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2185049455.index
+\ProductList\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4168408.index
 \Chapter3\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2646736626.index
@@ -16,6 +20,8 @@ C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3358414519.
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\931917425.index
 \blog\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4003994759.index
+\blog\src
+C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1300024716.index
 \blog\src
 C:\src\jspwork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3143325655.index
 \blog\src
