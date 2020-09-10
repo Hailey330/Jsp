@@ -153,7 +153,12 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="blog" path="/blog" reloadable="true" source="org.eclipse.jst.jee.server:blog" useHttpOnly="true"/><Context docBase="ProductList" path="/ProductList" reloadable="true" source="org.eclipse.jst.jee.server:ProductList"/></Host>
+      <Context docBase="apple" path="/apple" reloadable="true" source="org.eclipse.jst.jee.server:apple"/>
+      <Context docBase="premierLeague" path="/premierLeague" reloadable="true" source="org.eclipse.jst.jee.server:premierLeague"/>
+      <Context docBase="ProductList" path="/ProductList" reloadable="true" source="org.eclipse.jst.jee.server:ProductList"/>
+      <Context docBase="blog" path="/blog" reloadable="true" source="org.eclipse.jst.jee.server:blog"/>
+      <Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/>
+      <Context docBase="soundcloud" path="/soundcloud" reloadable="true" source="org.eclipse.jst.jee.server:soundcloud"/><Context docBase="timeTest" path="/timeTest" reloadable="true" source="org.eclipse.jst.jee.server:timeTest"/></Host>
     </Engine>
   </Service>
 </Server>

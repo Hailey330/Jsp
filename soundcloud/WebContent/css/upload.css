@@ -1,0 +1,256 @@
+
+.uploadMain {
+	margin: -30px auto 0;
+	padding: 30px 0;
+	width: 800px
+}
+
+.uploadMain__title {
+	font-size: 22px
+}
+
+.uploadMain__chooserContainer {
+	margin: 0 0 5px;
+	border-radius: 2px;
+	background-color: #fff;
+	text-align: center;
+	position: relative
+}
+
+.uploadMain__content {
+	margin: 100px 0;
+	transition: margin .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.uploadMain__hqNote {
+	font-size: 13px;
+	margin-bottom: 26px;
+	padding: 0 20px;
+}
+
+.uploadMain__chooser {
+	margin: 16px 0 12px;
+}
+
+.uploadMain__additional {
+	transition: opacity .1s .3s;
+}
+
+.uploadMain__asPlaylist {
+	margin-bottom: 16px
+}
+
+.uploadMain__defaultSharing {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center
+}
+
+.uploadMain.overQuota .uploadMain__asPlaylist, .uploadMain.overQuota .uploadMain__defaultSharing {
+	visibility: hidden
+}
+
+.uploadMain__overQuotaBanner {
+	display: none
+}
+
+.uploadMain__foot {
+	position: relative;
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	background-color: #fff;
+	transition: background-color .3s ease-in-out
+}
+
+.uploadMain__foot>.l-footer {
+	padding: 11px 0 0;
+	background: none;
+	color: #666
+}
+
+.uploadMain__foot>.l-footer a:not(.localeSelector){
+	color: #666;
+}
+
+.uploadMain__foot>.l-footer a:not(.localeSelector ):hover {
+	color: #999
+}
+
+.uploadMain__noticeWithoutActiveUploads {
+	font-size: 12px;
+	display: block;
+}
+
+.uploadMain.hasActiveUploads .uploadMain__noticeWithoutActiveUploads, .uploadMain__noticeWithActiveUploads {
+	display: none
+}
+
+.uploadMain.hasActiveUploads .uploadMain__noticeWithActiveUploads {
+	display: block
+}
+
+.uploadMain.overQuota .uploadMain__overQuotaBanner {
+	display: block;
+	margin-bottom: 8px
+}
+
+.uploadMain.hasActiveUploads .uploadMain__content {
+	margin: 32px 0 22px
+}
+
+.uploadMain.hasActiveUploads .uploadMain__additional {
+	height: 0;
+	opacity: 0;
+	transition-delay: 0s
+}
+
+.uploadMain.hasActiveUploads:not (.overQuota ) .uploadMain__quotaMeter {
+	display: none
+}
+
+.uploadBackground.imageDidLoad:not (.hasActiveUploads )~.uploadMain__foot {
+	border-color: #f2f2f2;
+	background-color: hsla(0, 0%, 94.9%, .9)
+}
+
+.uploadBackground.imageDidLoad.hasActiveUploads ~.uploadMain__foot {
+	background-color: transparent
+}
+
+.uploadMain__quotaMeter {
+	margin-bottom: 10px
+}
+
+.uploadMain.hasActiveUploads:not (.hasUnsavedUploads ) .uploadMain__afterUploadChooser {
+	display: -webkit-flex;
+	display: flex;
+	padding: 10px 24px;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: center
+}
+
+.uploadMain.hasActiveUploads.overQuota .uploadMain__chooserContainer, .uploadMain.hasActiveUploads .uploadMain__beforeUploadChooser, .uploadMain.hasUnsavedUploads .uploadMain__chooserContainer,
+	.uploadMain:not (.hasActiveUploads ) .uploadMain__afterUploadChooser {
+	display: none
+}
+
+.uploadMain.hasActiveUploads:not (.hasUnsavedUploads ) .uploadMain__chooserContainer {
+	border: 2px dashed #e5e5e5;
+	box-shadow: none
+}
+
+.uploadMain__afterUploadChooser .chooseFiles__button {
+	height: 40px;
+	font-size: 16px
+}
+
+.overQuotaUpsell:not (.m-hidden )~.uploadMain__beforeUploadChooser {
+	-webkit-filter: blur(2px);
+	filter: blur(2px)
+}
+
+.overQuotaUpsell:not (.m-hidden )~.uploadMain__beforeUploadChooser .uploadMain__content {
+	margin: 84px 0
+}
+
+.uploadBackground {
+	width: 800px;
+	height: 90px;
+	transition: height .1s ease-in-out
+}
+
+.uploadBackground__image, .uploadBackground__image:after, .uploadBackground__image:before {
+	width: 1240px;
+	height: 800px;
+	content: ""
+}
+
+.uploadBackground__image {
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	transition: opacity .3s ease-in-out;
+	background-size: 1240px 800px;
+	background-position: top;
+	opacity: 0;
+	pointer-events: none;
+	min-height: calc(100vh - 46px);
+	overflow: hidden;
+	z-index: -1
+}
+
+@media ( max-width :1239px) {
+	.uploadBackground__image, .uploadBackground__image:after, .uploadBackground__image:before {
+		width: 1080px
+	}
+}
+
+@media ( max-width :1079px) {
+	.uploadBackground__image, .uploadBackground__image:after, .uploadBackground__image:before {
+		width: 960px
+	}
+}
+
+.uploadBackground__image:before {
+	position: relative;
+	display: block;
+	-webkit-transform: translateY(100%) rotateX(180deg);
+	transform: translateY(100%) rotateX(180deg);
+	background-image: inherit;
+	background-size: inherit
+}
+
+.uploadBackground__image:after {
+	position: relative;
+	display: block;
+	background-image: linear-gradient(transparent -50%, #fff 34%)
+}
+
+.uploadBackground .uploadBackground__landingPage {
+	display: block;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0)
+}
+
+.uploadBackground.imageDidLoad .uploadBackground__image {
+	opacity: 1
+}
+
+.uploadBackground.hasActiveUploads {
+	height: 18px
+}
+
+.uploadBackground.hasActiveUploads .uploadBackground__image {
+	opacity: 0
+}
+
+.uploadBackground.hasActiveUploads .uploadBackground__landingPage {
+	visibility: hidden
+}
+
+.inputLabel {
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+	background-color: #f50;
+	cursor: pointer;
+	padding: 12px 15px;
+	border-radius: 3px;
+	letter-spacing: 0.5px;
+	box-shadow: 1px 1px 5px lightgrey
+}
+.h-input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1
+}
+

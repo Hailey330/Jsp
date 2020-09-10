@@ -1,0 +1,82 @@
+.content-container {
+	width: 91.75vw;
+	max-width: 1240px;
+	padding-top: 46px;
+	background: #fff;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex
+}
+
+
+
+.track-form-container {
+	width: 91.75vw;
+	margin: 46px auto 0px
+}
+
+.track-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh
+}
+
+.audio-upload-container {
+	width: 800px;
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px lightgrey solid;
+	margin-top: 100px;
+	justify-content: space-between;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear
+}
+
+.audio-upload-container h1 {
+	padding-top: 36px;
+	font-size: 25px;
+	letter-spacing: 0.8px
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 41.6px;
+	font-weight: 400;
+	text-size-adjust: 100%
+}
+
+.audio-upload-container .il-main {
+	margin: 90px 0px 210px 0px;
+	font-weight: 300;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear
+}
+
+.inputLabel {
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	background-color: #f50;
+	cursor: pointer;
+	padding: 12px 15px;
+	border-radius: 3px;
+	letter-spacing: 0.8px;
+	box-shadow: 1px 1px 5px lightgrey
+}
+
+.h-input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1
+}

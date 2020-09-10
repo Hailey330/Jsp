@@ -9,7 +9,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.cos.product.action.Action;
+import com.cos.product.action.ProductDeleteProcAction;
 import com.cos.product.action.ProductListAction;
+import com.cos.product.action.ProductOrderByBasicAction;
+import com.cos.product.action.ProductOrderByCountAction;
+import com.cos.product.action.ProductOrderByPriceAction;
 
 @WebServlet("/product")
 public class ProductController extends HttpServlet{
@@ -39,6 +43,14 @@ public class ProductController extends HttpServlet{
 	public Action router(String cmd) {
 		if(cmd.equals("list")) {
 			return new ProductListAction();
+		} else if (cmd.equals("orderByBasic")) {
+			return new ProductOrderByBasicAction();
+		} else if (cmd.equals("orderByPrice")) {
+			return new ProductOrderByPriceAction();
+		} else if (cmd.equals("orderByCount")) {
+			return new ProductOrderByCountAction();
+		} else if (cmd.equals("deleteProc")) {
+			return new ProductDeleteProcAction();
 		}
 		return null;
 	}

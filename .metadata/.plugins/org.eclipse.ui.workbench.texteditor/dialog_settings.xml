@@ -5,33 +5,38 @@
 		<item key="DIALOG_Y_ORIGIN" value="403"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="All"/>
+		<item key="selection" value=".spad"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="all"/>
-			<item value="userRo"/>
-			<item value="userRole"/>
-			<item value="insert"/>
-			<item value="count"/>
-			<item value="upda"/>
-			<item value="users"/>
-			<item value="localhost"/>
-			<item value="host"/>
-			<item value="connection"/>
-			<item value="session"/>
+			<item value=".spad"/>
+			<item value=".blog__sidebar .blog__sidebar__item .sidebar__title h6:after"/>
+			<item value=".footer__top-auth h5"/>
+			<item value="footer__top"/>
+			<item value="row"/>
+			<item value="c:"/>
+			<item value="img"/>
+			<item value="header__menu"/>
+			<item value="truncatedAudioInfo__content"/>
+			<item value="sc-type-small"/>
+			<item value="listenDetails__partialInfo"/>
+			<item value="truncatedAudioInfo__metadata"/>
+			<item value="리모컨"/>
+			<item value="리모콘"/>
+			<item value="댓글"/>
 		</list>
 		<list key="replacehistory">
+			<item value="col-lg-4 col-md-4 col-sm-4"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="815"/>
-		<item key="DIALOG_Y_ORIGIN" value="222"/>
+		<item key="DIALOG_X_ORIGIN" value="1454"/>
+		<item key="DIALOG_Y_ORIGIN" value="669"/>
 		<item key="DIALOG_WIDTH" value="271"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_HEIGHT" value="363"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>

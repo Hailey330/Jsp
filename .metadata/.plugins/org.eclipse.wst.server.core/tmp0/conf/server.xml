@@ -153,9 +153,16 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\blog" path="/blog" reloadable="true" source="org.eclipse.jst.jee.server:blog" useHttpOnly="true">
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\apple" path="/apple" reloadable="true" source="org.eclipse.jst.jee.server:apple"/>
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\premierLeague" path="/premierLeague" reloadable="true" source="org.eclipse.jst.jee.server:premierLeague"/>
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ProductList" path="/ProductList" reloadable="true" source="org.eclipse.jst.jee.server:ProductList"/>
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\blog" path="/blog" reloadable="true" source="org.eclipse.jst.jee.server:blog">
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="cos"/>
-</Context><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ProductList" path="/ProductList" reloadable="true" source="org.eclipse.jst.jee.server:ProductList">
+</Context>
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/>
+      <Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\soundcloud" path="/soundcloud" reloadable="true" source="org.eclipse.jst.jee.server:soundcloud">
+<Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="sc"/>
+</Context><Context docBase="C:\src\jspwork\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\timeTest" path="/timeTest" reloadable="true" source="org.eclipse.jst.jee.server:timeTest">
 <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="bitc5600" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="cos"/>
 </Context></Host>
     </Engine>

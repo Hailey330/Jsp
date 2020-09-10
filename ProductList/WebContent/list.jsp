@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<!-- DB + Ajax 연습 --> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,21 +15,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 	<div class="container">
 
 		<br /> <br />
-		<h2>Product List</h2>
-		<p>DB + Ajax</p>
+		<h2 class="m-3" align="center">상품 리스트</h2>
 
-		<div class="btn-group">
-			<button type="button" class="btn btn-light">처음으로</button>
+		<div class="btn-group m-2" style="float: right;">
+			<button onclick="orderByBasic()" class="btn btn-light">처음으로</button>
+
 			<div class="btn-group">
-				<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">정렬하기</button>
+				<button class="btn btn-light dropdown-toggle" data-toggle="dropdown">정렬하기</button>
 				<div class="dropdown-menu">
-					<a class="dropdown-item" href="/ProductList?cmd=list">가격순</a>
-					<a class="dropdown-item" href="/ProductList?cmd=list">판매순</a>
+					<a onclick="orderByPrice()" class="dropdown-item">가격순</a> <a onclick="orderByCount()" class="dropdown-item">판매순</a>
 				</div>
 			</div>
+
 		</div>
 
 		<br /> <br />
@@ -41,24 +44,27 @@
 						<th>종류</th>
 						<th>가격</th>
 						<th>판매수</th>
+						<th>상품 삭제하기</th>
 					</tr>
 				</thead>
-				<c:forEach var="product" items="${products}">
-					<tbody align="center">
-						<tr>
-							<td>${product.id}></td>
+				<tbody align="center" id="product__list">
+					<c:forEach var="product" items="${products}">
+						<tr id="product-${product.id}">
+							<td>${product.id}</td>
 							<td>${product.name}</td>
 							<td>${product.type}</td>
 							<td>${product.price}</td>
 							<td>${product.count}</td>
+							<td><button onclick="productDelete(${product.id})" class="btn btn-outline-danger">삭제</button></td>
 						</tr>
-					</tbody>
-				</c:forEach>
+					</c:forEach>
+				</tbody>
 			</table>
 		</div>
 	</div>
 
 </body>
 
+<script src="/ProductList/js/list.js"></script>
 
 </html>

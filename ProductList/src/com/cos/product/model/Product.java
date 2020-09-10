@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class Product {
 	private int id;
 	private String name;
-	private String price;
+	private int price;
 	private String type;
 	private int count;
 }

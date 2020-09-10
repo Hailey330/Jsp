@@ -1,0 +1,65 @@
+html {
+    position: relative;
+    height: 100%;
+}
+
+head {
+    display: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#header-carousel-off .backbar {
+    position: fixed;
+    width: 100vw;
+    background-color: #333;
+    height: 46px;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    width: 91.75vw;
+    max-width: 1240px;
+    height: 46px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    font: 14px/1.5 normal white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: #333;
+}
+
+.navbar .navbar-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar .navbar-left .header-logo {
+    box-sizing: border-box;
+    background: linear-gradient(#f70, #f30);
+}
+
+.cloud-logo-li {
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    position: relative;
+    top: 10px;
+    left: 11px;
+    padding-top: 1px;
+}
+
+.header-item {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 12px 0px;
+    width: 104px;
+    color: #ccc;
+    border-right: 1px black solid;
+}
